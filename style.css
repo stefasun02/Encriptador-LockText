@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    
+}
+
+body {
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;        
+    max-width: 1200px; 
+    margin: 0 auto; 
+    margin-bottom: 20px;  
+    padding: 20px; 
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.alura__logo {
+    width: 120px;
+    height: 48px;
+    margin-left: 10px;
+}
+
+/* Switch consiguration for language and dark mode */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider img {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    height: 26px;
+    width: 26px;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #DEF9C4;
+}
+
+input:checked + .slider img {
+    transform: translateX(26px);
+}
+/* End of switch config. */
+
+.main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+    margin-bottom: 50px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+section {
+    width: 100%;
+    max-width: 500px; 
+}
+
+.text__area, .mensaje__encriptado {
+    width: 100%;
+    height: 200px; 
+    border-radius: 5px;
+    margin-bottom: 40px; 
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    background: white;
+    font-size: 20px;
+}
+
+.mensaje__encriptado{
+    background: white;
+    background-image: url(../assets/duck-ducky.gif);
+    background-repeat: no-repeat;
+    background-size: 70px 70px; 
+    background-position: bottom left; 
+    border: none;
+    color: #40514E;
+    margin-bottom: 40px;
+    overflow-y: auto;
+
+}
+
+.botones {
+    display: flex;
+    justify-content: space-evenly; 
+    margin-top: 20px;
+}
+
+.btn__encriptar {
+    background: #1679AB;
+    color: white;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn__desencriptar {
+    background: #1679AB;
+    color: white;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.botones__texto {
+    display: flex; 
+    justify-content: space-evenly;
+    margin-top: 0px; 
+} 
+
+.copiar {
+    height: 30px;
+    width: 100px;
+    background: #1679AB;
+    color: white;
+    cursor: pointer;
+}
+
+.limpiar {
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+.indicacion {
+    margin-top: 5px;    
+    display: flex;       
+    justify-content: center;  
+    align-items: center; 
+    font-size: 24px;     
+    color: #000000;         
+    margin: 0;           
+}
+
+.indicacion__imagen {
+    margin-right: 4px;   
+    width: 16px;
+}
+
+
+.footer { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1679AB;
+    height: 40px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #fff; 
+}
+
+.footer__images {
+    margin-left: 15px; 
+    width: 30px; 
+    height: 30px;
+}
+
+.footer__images__li {
+    width: 42px;
+    height: 42px;
+}
+
+.footer__links {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-image: url("../assets/dark-background.jpg"); 
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+body.dark-mode .text__area{
+    background: #333; 
+    color: #e0e0e0; 
+}
+body.dark-mode .mensaje__encriptado {
+    background: #333; 
+    background-image: url(../assets/duck-ducky.gif);
+    background-repeat: no-repeat;
+    background-size: 70px 70px; 
+    background-position: bottom left; 
+    color: #e0e0e0; 
+}
+
+body.dark-mode .indicacion {
+    color: #e0e0e0; 
+}
+
+body.dark-mode .btn__encriptar,
+body.dark-mode .btn__desencriptar,
+body.dark-mode .copiar,
+body.dark-mode .limpiar {
+    background: #444; 
+    color: #e0e0e0; 
+}
+
+body.dark-mode .switch .slider {
+    background-color: #666; 
+}
+
+body.dark-mode .footer {
+    background: #1c1c1c; 
+    color: #e0e0e0; 
+}
+
+@media (max-width: 1200px) {
+    .header { 
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .main {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; 
+        gap: 20px; 
+        margin-bottom: 20px;
+    }
+
+    .text__area, .mensaje__encriptado {
+        height: 150px; 
+        font-size: 18px;
+    }
+
+    .botones {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .footer {
+        flex-direction: column; 
+        height: auto; 
+        padding: 10px; 
+    }
+
+    .footer__images {
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .text__area, .mensaje__encriptado {
+        height: 120px; 
+        font-size: 16px; 
+    }
+
+    .btn__encriptar, .btn__desencriptar, .copiar, .limpiar {
+        width: 80px; 
+        height: 28px; 
+    }
+}

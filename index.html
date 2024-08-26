@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <title>Encriptador LockText</title>
+
+</head>
+<body>
+    <header class="header"> 
+        <a href="https://www.aluracursos.com/">
+        <img class="alura__logo" src="assets/alura.png" alt="Logo Alura"> </a>
+        <h1>Encriptador - LockText</h1> 
+
+        <nav> <label class="switch">
+            <input type="checkbox" id="darkModeSwitch">
+            <span class="slider">
+                <img src="assets/darkmode.png" alt="Dark theme simbol" class="dark-mode-icon" id="darkModeIcon">
+            </span>
+        </label> </nav>
+    </header>
+
+    <main class="main">
+        <section>
+            <textarea id="text__area" class="text__area" cols="30" rows="10" placeholder="Ingresa tu texto aquí..."></textarea>
+            
+            <div class="indicacion"> 
+                <h6> <img class="indicacion__imagen" src="assets/alert.png" alt="signo de exclamación"> 
+                Solo texto en minúsculas, sin tildes o caracteres especiales</h6> 
+            </div>
+            <div class="botones">
+                <button id="btn__encriptar" class="btn__encriptar">Encriptar</button>
+                <button id="btn__desencriptar" class="btn__desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section>
+            <textarea id="mensaje__encriptado" class="mensaje__encriptado" cols="30" rows="10" 
+            placeholder="Ningún mensaje fue encontrado..." readonly></textarea>
+            <div class="botones__texto">
+                <button id="copyPasteButton" class="copiar">Copiar</button>
+                <button class="limpiar">Limpiar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p> By Stefanny Solarte 2024</p>
+        <a class="footer__links" href="https://github.com/stefasun02">
+            <img class="footer__images" src="assets/github.png" alt="Logo de GitHub">
+        </a>
+        <a class="footer__links" href="https://www.linkedin.com/in/stefanny-solarte/">
+            <img class="footer__images__li" src="assets/linkedin.png" alt="Logo de LinkedIn">
+        </a>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
