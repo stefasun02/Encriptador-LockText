@@ -11,7 +11,7 @@
 }
 
 body {
-    background-image: url("../assets/background.jpg");
+    background-image: url("assets/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -43,7 +43,7 @@ body {
     margin-left: 10px;
 }
 
-/* Switch consiguration for language and dark mode */
+/* Switch configuration for language and dark mode */
 
 .switch {
     position: relative;
@@ -118,7 +118,7 @@ section {
 
 .mensaje__encriptado{
     background: white;
-    background-image: url(../assets/duck-ducky.gif);
+    background-image: url(assets/duck-ducky.gif);
     background-repeat: no-repeat;
     background-size: 70px 70px; 
     background-position: bottom left; 
@@ -220,7 +220,7 @@ section {
 
 /* Estilos para el modo oscuro */
 body.dark-mode {
-    background-image: url("../assets/dark-background.jpg"); 
+    background-image: url("assets/dark-background.jpg"); 
     background-color: #121212; 
     color: #e0e0e0; 
 }
@@ -231,7 +231,7 @@ body.dark-mode .text__area{
 }
 body.dark-mode .mensaje__encriptado {
     background: #333; 
-    background-image: url(../assets/duck-ducky.gif);
+    background-image: url(assets/duck-ducky.gif);
     background-repeat: no-repeat;
     background-size: 70px 70px; 
     background-position: bottom left; 
