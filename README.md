@@ -26,6 +26,7 @@ Encriptador LockText es una aplicación web que permite a los usuarios encriptar
 1. **Clone el repositorio:**
 
    ```bash
+   https://github.com/stefasun02/EncriptadorLockText.git
    
   ## Usage
 
