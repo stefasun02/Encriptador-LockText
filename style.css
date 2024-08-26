@@ -114,6 +114,7 @@ section {
     border: none;
     background: white;
     font-size: 20px;
+    resize: "none";
 }
 
 .mensaje__encriptado{
