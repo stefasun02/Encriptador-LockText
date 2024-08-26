@@ -11,10 +11,6 @@ Encriptador LockText es una aplicación web que permite a los usuarios encriptar
 - Modo oscuro con un botón de interruptor
 - Interfaz de usuario responsiva
 
-## Screenshots
-
-(Include screenshots of your project here, if available)
-
 ## Technologies Used
 
 - **HTML**: Estructura de la página web
